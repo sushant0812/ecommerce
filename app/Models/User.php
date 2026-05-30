@@ -57,4 +57,9 @@ public function isCustomer()
 {
     return $this->role === 'customer';
 }
+
+public function vendor()
+{
+    return $this->hasOne(Vendor::class);
+}
 }
